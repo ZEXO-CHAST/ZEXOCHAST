@@ -1,0 +1,873 @@
+```html
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEXO CHEATS | Otomatik Satış Paneli</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            900: '#0a0b10',
+                            800: '#12141c',
+                            700: '#1c1f2e',
+                            600: '#272c42',
+                            accent: '#00ffcc',
+                            purple: '#9d4edd',
+                            pink: '#ff007f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0b10;
+            color: #e2e8f0;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.6), 0 0 20px rgba(0, 255, 204, 0.4);
+        }
+        .neon-glow-pink {
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.6), 0 0 20px rgba(255, 0, 127, 0.4);
+        }
+        .neon-border {
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.2), inset 0 0 15px rgba(0, 255, 204, 0.05);
+            border: 1px solid rgba(0, 255, 204, 0.4);
+        }
+        .neon-border-pink {
+            box-shadow: 0 0 15px rgba(255, 0, 127, 0.2), inset 0 0 15px rgba(255, 0, 127, 0.05);
+            border: 1px solid rgba(255, 0, 127, 0.4);
+        }
+        .cyber-card {
+            background: linear-gradient(135deg, rgba(18, 20, 28, 0.9) 0%, rgba(28, 31, 46, 0.8) 100%);
+            backdrop-filter: blur(10px);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0b10;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1c1f2e;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 255, 204, 0.2);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00ffcc;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-cyber-accent selection:text-black">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-cyber-900/90 backdrop-blur-md border-b border-cyber-600/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-cyber-accent/10 border border-cyber-accent flex items-center justify-center neon-border">
+                    <i class="fa-solid fa-shield-halved text-cyber-accent text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-orbitron font-black text-xl sm:text-2xl tracking-wider text-white">ZEXO <span class="text-cyber-accent neon-glow">CHEATS</span></h1>
+                    <p class="text-xs text-gray-400 font-mono">OTOMATİK SATIŞ PANELİ</p>
+                </div>
+            </div>
+
+            <!-- Status Badge -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <div class="flex items-center space-x-2 bg-cyber-800 border border-emerald-500/30 px-3 py-1.5 rounded-full text-xs font-mono">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-emerald-400 font-semibold">[ 🟢 SİSTEM AKTİF ]</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-cyber-800 border border-cyber-accent/30 px-3 py-1.5 rounded-full text-xs font-mono">
+                    <i class="fa-solid fa-shield text-cyber-accent"></i>
+                    <span class="text-cyber-accent font-semibold">[ 🛡️ GÜVENLİ ]</span>
+                </div>
+            </div>
+
+            <!-- Quick Contact Buttons -->
+            <div class="flex items-center space-x-2">
+                <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/40 p-2.5 sm:px-4 sm:py-2 rounded-xl transition duration-300 flex items-center space-x-2 text-sm font-semibold">
+                    <i class="fa-brands fa-telegram text-lg"></i>
+                    <span class="hidden md:inline">Telegram</span>
+                </a>
+                <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 p-2.5 sm:px-4 sm:py-2 rounded-xl transition duration-300 flex items-center space-x-2 text-sm font-semibold">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden md:inline">WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative py-12 px-4 overflow-hidden border-b border-cyber-700/50 bg-gradient-to-b from-cyber-800/50 to-cyber-900">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#00ffcc_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-cyber-accent/10 border border-cyber-accent/30 text-cyber-accent text-xs font-mono tracking-widest uppercase">
+                ⚡ Anında Teslimat | 🛠️ 7/24 Kesintisiz Kurulum Desteği
+            </div>
+            <h2 class="font-orbitron font-black text-3xl sm:text-5xl text-white mb-4 tracking-tight">
+                ELİT OYUN DENEYİMİ İÇİN <span class="text-cyber-accent neon-glow">PROFESYONEL ÇÖZÜMLER</span>
+            </h2>
+            <p class="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto mb-6">
+                Android, iOS hile ve bypass sistemleri ile G-Box lisanslarında en güncel, stabil ve güvenli ürünler tek çatı altında.
+            </p>
+            
+            <!-- Mobile Status bar indicator -->
+            <div class="flex sm:hidden justify-center items-center space-x-3 mb-4 text-xs font-mono">
+                <span class="bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-2.5 py-1 rounded-md">🟢 SİSTEM AKTİF</span>
+                <span class="bg-cyber-accent/10 border border-cyber-accent/30 text-cyber-accent px-2.5 py-1 rounded-md">🛡️ GÜVENLİ</span>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mt-8">
+                <button onclick="filterCategory('all')" id="btn-all" class="category-btn px-5 py-2.5 rounded-xl font-orbitron text-xs sm:text-sm font-bold bg-cyber-accent text-cyber-900 shadow-lg shadow-cyber-accent/20 transition duration-300">
+                    <i class="fa-solid fa-border-all mr-2"></i> TÜM ÜRÜNLER
+                </button>
+                <button onclick="filterCategory('android')" id="btn-android" class="category-btn px-5 py-2.5 rounded-xl font-orbitron text-xs sm:text-sm font-bold bg-cyber-700/80 hover:bg-cyber-600 text-gray-300 border border-cyber-600 transition duration-300">
+                    <i class="fa-solid fa-robot mr-2"></i> ANDROID HİLE
+                </button>
+                <button onclick="filterCategory('ios')" id="btn-ios" class="category-btn px-5 py-2.5 rounded-xl font-orbitron text-xs sm:text-sm font-bold bg-cyber-700/80 hover:bg-cyber-600 text-gray-300 border border-cyber-600 transition duration-300">
+                    <i class="fa-brands fa-apple mr-2"></i> IOS HİLE
+                </button>
+                <button onclick="filterCategory('gbox')" id="btn-gbox" class="category-btn px-5 py-2.5 rounded-xl font-orbitron text-xs sm:text-sm font-bold bg-cyber-700/80 hover:bg-cyber-600 text-gray-300 border border-cyber-600 transition duration-300">
+                    <i class="fa-solid fa-box-archive mr-2"></i> G-BOX LİSANSLARI
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content / Products Grid -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        
+        <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Products will be dynamically populated or hardcoded for bulletproof rendering -->
+            
+            <!-- 1. King Android -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-accent transition-all duration-300 flex flex-col justify-between group" data-category="android">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 font-semibold tracking-wider">ANDROID HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">King Android</h3>
+                            </div>
+                        </div>
+                        <span class="bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">275 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">925 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-cyber-accent mr-2"></i> Aylık</span>
+                            <span class="font-bold text-cyber-accent bg-cyber-accent/10 px-2.5 py-1 rounded-lg border border-cyber-accent/30">1.900 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('King Android', 'Günlük', '275 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-cyber-accent"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Zolo Cheats -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-accent transition-all duration-300 flex flex-col justify-between group" data-category="android">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 font-semibold tracking-wider">ANDROID HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">Zolo Cheats</h3>
+                            </div>
+                        </div>
+                        <span class="bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">275 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">725 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-cyber-accent mr-2"></i> Aylık</span>
+                            <span class="font-bold text-cyber-accent bg-cyber-accent/10 px-2.5 py-1 rounded-lg border border-cyber-accent/30">1.500 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('Zolo Cheats', 'Günlük', '275 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-cyber-accent"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Obsidan By-Pass -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-accent transition-all duration-300 flex flex-col justify-between group" data-category="android">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-shield-virus"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 font-semibold tracking-wider">ANDROID HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">Obsidan By-Pass</h3>
+                            </div>
+                        </div>
+                        <span class="bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">275 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">925 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-cyber-accent mr-2"></i> Aylık</span>
+                            <span class="font-bold text-cyber-accent bg-cyber-accent/10 px-2.5 py-1 rounded-lg border border-cyber-accent/30">1.900 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('Obsidan By-Pass', 'Günlük', '275 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-cyber-accent"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Shield Cheat -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-accent transition-all duration-300 flex flex-col justify-between group" data-category="android">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-shield-dog"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 font-semibold tracking-wider">ANDROID HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">Shield Cheat</h3>
+                            </div>
+                        </div>
+                        <span class="bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">325 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">925 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-cyber-accent mr-2"></i> Aylık</span>
+                            <span class="font-bold text-cyber-accent bg-cyber-accent/10 px-2.5 py-1 rounded-lg border border-cyber-accent/30">1.900 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('Shield Cheat', 'Günlük', '325 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-cyber-accent"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Moon And -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-accent transition-all duration-300 flex flex-col justify-between group" data-category="android">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-moon"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 font-semibold tracking-wider">ANDROID HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">Moon And</h3>
+                            </div>
+                        </div>
+                        <span class="bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">325 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">925 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-cyber-accent mr-2"></i> Aylık</span>
+                            <span class="font-bold text-cyber-accent bg-cyber-accent/10 px-2.5 py-1 rounded-lg border border-cyber-accent/30">1.900 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('Moon And', 'Günlük', '325 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-cyber-accent"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Diğer Android Seçenekleri -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-accent transition-all duration-300 flex flex-col justify-between group" data-category="android">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 font-semibold tracking-wider">ANDROID SEÇENEKLERİ</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">Özel Paketler</h3>
+                            </div>
+                        </div>
+                        <span class="bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-xs border-y border-cyber-700/60 py-4">
+                        <div class="bg-cyber-700/40 p-2.5 rounded-xl border border-cyber-600">
+                            <div class="text-cyber-accent font-bold mb-1">Revotech</div>
+                            <div class="text-gray-300">Günlük: <span class="text-white font-semibold">275 ₺</span> | Haftalık: <span class="text-white font-semibold">925 ₺</span></div>
+                        </div>
+                        <div class="bg-cyber-700/40 p-2.5 rounded-xl border border-cyber-600">
+                            <div class="text-cyber-accent font-bold mb-1">Aspect Mod</div>
+                            <div class="text-gray-300">Aylık: <span class="text-white font-semibold">1.900 ₺</span></div>
+                        </div>
+                        <div class="bg-cyber-700/40 p-2.5 rounded-xl border border-cyber-600">
+                            <div class="text-cyber-accent font-bold mb-1">X-Kernel (Root)</div>
+                            <div class="text-gray-300">Günlük: <span class="text-white font-semibold">325 ₺</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('Diğer Android Seçenekleri', 'Özel Paket', 'Değişken')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>DETAYLI BİLGİ & SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-cyber-accent"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. İos Star -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-purple transition-all duration-300 flex flex-col justify-between group" data-category="ios">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-purple-400 font-semibold tracking-wider">IOS HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">İos Star</h3>
+                            </div>
+                        </div>
+                        <span class="bg-purple-500/10 text-purple-400 border border-purple-500/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">275 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">875 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-purple-400 mr-2"></i> Aylık</span>
+                            <span class="font-bold text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-lg border border-purple-500/30">1.600 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('İos Star', 'Günlük', '275 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-purple-400"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. King İos -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-purple transition-all duration-300 flex flex-col justify-between group" data-category="ios">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-purple-400 font-semibold tracking-wider">IOS HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">King İos</h3>
+                            </div>
+                        </div>
+                        <span class="bg-purple-500/10 text-purple-400 border border-purple-500/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">325 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">925 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300 text-gray-500">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-gray-600 mr-2"></i> Aylık</span>
+                            <span class="font-semibold text-gray-500 bg-cyber-700/20 px-2.5 py-1 rounded-lg border border-cyber-800">Yok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('King İos', 'Günlük', '325 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-purple-400"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Dolphin İos -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-purple transition-all duration-300 flex flex-col justify-between group" data-category="ios">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-water"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-purple-400 font-semibold tracking-wider">IOS HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">Dolphin İos</h3>
+                            </div>
+                        </div>
+                        <span class="bg-purple-500/10 text-purple-400 border border-purple-500/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-500 mr-2"></i> Günlük</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">275 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-500 mr-2"></i> Haftalık</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">925 ₺</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300 text-gray-500">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-gray-600 mr-2"></i> Aylık</span>
+                            <span class="font-semibold text-gray-500 bg-cyber-700/20 px-2.5 py-1 rounded-lg border border-cyber-800">Yok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('Dolphin İos', 'Günlük', '275 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-purple-400"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Oasis İos -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-purple transition-all duration-300 flex flex-col justify-between group" data-category="ios">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-sun"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-purple-400 font-semibold tracking-wider">IOS HİLE</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">Oasis İos</h3>
+                            </div>
+                        </div>
+                        <span class="bg-purple-500/10 text-purple-400 border border-purple-500/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-500">
+                            <span class="flex items-center"><i class="fa-regular fa-clock text-gray-600 mr-2"></i> Günlük</span>
+                            <span class="font-semibold text-gray-500 bg-cyber-700/20 px-2.5 py-1 rounded-lg border border-cyber-800">Yok</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-500">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar text-gray-600 mr-2"></i> Haftalık</span>
+                            <span class="font-semibold text-gray-500 bg-cyber-700/20 px-2.5 py-1 rounded-lg border border-cyber-800">Yok</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-calendar-days text-purple-400 mr-2"></i> Aylık</span>
+                            <span class="font-bold text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-lg border border-purple-500/30">2.000 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('Oasis İos', 'Aylık', '2.000 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-purple-400"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. iPhone G-Box -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-pink transition-all duration-300 flex flex-col justify-between group" data-category="gbox">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-pink-400 font-semibold tracking-wider">G-BOX LİSANSLARI</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">iPhone G-Box</h3>
+                            </div>
+                        </div>
+                        <span class="bg-pink-500/10 text-pink-400 border border-pink-500/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-shield-heart text-pink-400 mr-2"></i> Lisans Süresi</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">1 Yıllık</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-tag text-pink-400 mr-2"></i> Fiyat</span>
+                            <span class="font-bold text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-lg border border-pink-500/30">1.100 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('iPhone G-Box', '1 Yıllık', '1.100 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-pink-400"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. iPad G-Box -->
+            <div class="product-card cyber-card rounded-2xl p-6 border border-cyber-600 hover:border-cyber-pink transition-all duration-300 flex flex-col justify-between group" data-category="gbox">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-tablet-screen-button"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-pink-400 font-semibold tracking-wider">G-BOX LİSANSLARI</span>
+                                <h3 class="font-orbitron font-bold text-lg text-white">iPad G-Box</h3>
+                            </div>
+                        </div>
+                        <span class="bg-pink-500/10 text-pink-400 border border-pink-500/30 text-[10px] font-mono px-2.5 py-1 rounded-full uppercase font-bold">Aktif</span>
+                    </div>
+                    
+                    <div class="space-y-2.5 my-6 font-mono text-sm border-y border-cyber-700/60 py-4">
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-shield-heart text-pink-400 mr-2"></i> Lisans Süresi</span>
+                            <span class="font-bold text-white bg-cyber-700/50 px-2.5 py-1 rounded-lg border border-cyber-600">1 Yıllık</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-300">
+                            <span class="flex items-center"><i class="fa-solid fa-tag text-pink-400 mr-2"></i> Fiyat</span>
+                            <span class="font-bold text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-lg border border-pink-500/30">1.000 ₺</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <button onclick="openOrderModal('iPad G-Box', '1 Yıllık', '1.000 ₺')" class="w-full bg-cyber-700 hover:bg-cyber-600 text-white font-orbitron text-xs font-bold py-2.5 px-4 rounded-xl border border-cyber-600 transition duration-300 flex items-center justify-center space-x-2">
+                        <span>HIZLI SATIN AL</span>
+                        <i class="fa-solid fa-arrow-right text-pink-400"></i>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://t.me/ZEXO_671" target="_blank" class="bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-telegram mr-1"></i> Telegram
+                        </a>
+                        <a href="https://wa.me/573241145589" target="_blank" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-center py-2 rounded-lg text-xs font-semibold transition">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="cyber-card w-full max-w-md rounded-2xl p-6 sm:p-8 border border-cyber-accent relative shadow-2xl animate-in fade-in zoom-in duration-200">
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-cyber-700/50 hover:bg-cyber-700 p-2 rounded-xl transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-cyber-accent/10 border border-cyber-accent flex items-center justify-center text-cyber-accent">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                    <h3 class="font-orbitron font-bold text-lg text-white">SİPARİŞ OLUŞTUR</h3>
+                    <p class="text-xs text-gray-400 font-mono">İletişim kanalını seçerek anında teslim al.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 mb-6 font-mono text-sm">
+                <div class="bg-cyber-700/40 p-3.5 rounded-xl border border-cyber-600">
+                    <span class="text-xs text-gray-400 block mb-1">Seçilen Ürün:</span>
+                    <span id="modal-product-name" class="font-bold text-white text-base">King Android</span>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-cyber-700/40 p-3.5 rounded-xl border border-cyber-600">
+                        <span class="text-xs text-gray-400 block mb-1">Paket / Süre:</span>
+                        <span id="modal-product-duration" class="font-bold text-cyber-accent">Günlük</span>
+                    </div>
+                    <div class="bg-cyber-700/40 p-3.5 rounded-xl border border-cyber-600">
+                        <span class="text-xs text-gray-400 block mb-1">Fiyat:</span>
+                        <span id="modal-product-price" class="font-bold text-emerald-400">275 ₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <p class="text-xs text-center text-gray-400 font-mono mb-2">Lütfen siparişi tamamlamak için bir platform seçin:</p>
+                <a id="modal-telegram-btn" href="https://t.me/ZEXO_671" target="_blank" class="w-full bg-sky-500 hover:bg-sky-600 text-black font-orbitron font-bold py-3.5 px-4 rounded-xl transition duration-300 flex items-center justify-center space-x-2 shadow-lg shadow-sky-500/20">
+                    <i class="fa-brands fa-telegram text-xl"></i>
+                    <span>TELEGRAM İLE SİVER / BAĞLAN</span>
+                </a>
+                <a id="modal-whatsapp-btn" href="https://wa.me/573241145589" target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-orbitron font-bold py-3.5 px-4 rounded-xl transition duration-300 flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>WHATSAPP İLE SİPARİŞ VER</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-900 border-t border-cyber-700/50 py-8 px-4 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-cyber-accent/10 border border-cyber-accent flex items-center justify-center">
+                    <i class="fa-solid fa-shield-halved text-cyber-accent text-sm"></i>
+                </div>
+                <span class="font-orbitron font-bold text-white tracking-wider">ZEXO CHEATS</span>
+            </div>
+            
+            <p class="text-xs text-gray-400 font-mono text-center">
+                © 2026 ZEXO CHEATS. Tüm hakları saklıdır. Güvenli Otomatik Satış Paneli.
+            </p>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://t.me/ZEXO_671" target="_blank" class="text-gray-400 hover:text-sky-400 transition text-lg">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://wa.me/573241145589" target="_blank" class="text-gray-400 hover:text-emerald-400 transition text-lg">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Filtering and Modal -->
+    <script>
+        function filterCategory(category) {
+            // Update button styles
+            const buttons = document.querySelectorAll('.category-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-cyber-accent', 'text-cyber-900', 'shadow-lg', 'shadow-cyber-accent/20');
+                btn.classList.add('bg-cyber-700/80', 'text-gray-300');
+            });
+
+            const activeBtn = document.getElementById(`btn-${category}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-cyber-700/80', 'text-gray-300');
+                activeBtn.classList.add('bg-cyber-accent', 'text-cyber-900', 'shadow-lg', 'shadow-cyber-accent/20');
+            }
+
+            // Filter products
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function openOrderModal(productName, duration, price) {
+            document.getElementById('modal-product-name').textContent = productName;
+            document.getElementById('modal-product-duration').textContent = duration;
+            document.getElementById('modal-product-price').textContent = price;
+
+            // Pre-fill message parameters if needed
+            const tgMsg = encodeURIComponent(`Merhaba, ${productName} (${duration}) satın almak istiyorum. Fiyat: ${price}`);
+            const waMsg = encodeURIComponent(`Merhaba, ${productName} (${duration}) satın almak istiyorum. Fiyat: ${price}`);
+
+            document.getElementById('modal-telegram-btn').href = `https://t.me/ZEXO_671?text=${tgMsg}`;
+            document.getElementById('modal-whatsapp-btn').href = `https://wa.me/573241145589?text=${waMsg}`;
+
+            const modal = document.getElementById('order-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeOrderModal() {
+            const modal = document.getElementById('order-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('order-modal');
+            if (event.target === modal) {
+                closeOrderModal();
+            }
+        }
+    </script>
+
+</body>
+</html>
+```
+
+
+ Kanka bu koda admin admin paneli ekleyeceğiz. Yani şöyle adminle admin giriş yapacağız. Yani kayıt ol. Buna şimdi kayıt ol. Giriş yap. İlk de sorarken giriş yap. Kayıt ol yapacağız. Tamam mı? Eee admin Gmail'i ayrı olacak. Biz adminde eee mevsevisini yönetebileceğiz. Mesela iOS Stars şey alınca hile alınca key'ni yani key alabilsem. Bakiye sistemi olsun. Bakiye sistemi de eee yüklemek için eee WhatsApp'tan bakiye yüklemek. Bakiye bölümü yap. Yükle bakiye yüklemek için WhatsApp'tan iletişime geçip WhatsApp'tan admin de eee bakiye yükleyebilsin. Anladın mı?
